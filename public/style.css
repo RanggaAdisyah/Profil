@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box; /* Untuk memastikan padding dan border termasuk dalam total width dan height */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Mengatur tinggi minimal body agar memenuhi layar */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky; /* Membuat header tetap di atas saat di-scroll */
+    top: 0; /* Menetapkan posisi atas untuk sticky */
+    z-index: 1000; /* Menjamin header berada di atas konten lainnya */
+}
+
+h1 {
+    margin: 0;
+}
+
+.profile-container {
+    display: flex; /* Menggunakan flexbox untuk menampilkan foto dan informasi secara berdampingan */
+    align-items: center; /* Mengatur vertikal align ke tengah */
+    padding: 20px;
+}
+
+.profile-photo {
+    width: 150px; /* Atur lebar foto */
+    height: auto; /* Membiarkan tinggi foto terjaga secara proporsional */
+    margin-right: 20px; /* Jarak antara foto dan informasi */
+    border-radius: 10px; /* Memberikan sedikit efek rounded */
+}
+
+.profile-info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.profile-info i {
+    margin-right: 8px; /* Memberikan jarak antara ikon dan teks */
+    color: #007BFF; /* Mengubah warna ikon */
+}
+
+
+section {
+    padding: 20px;
+    flex: 1; /* Mengizinkan section mengambil sisa ruang yang tersedia */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    margin-top: auto; /* Memastikan footer berada di bagian bawah */
+}
